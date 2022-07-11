@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+    <script src="{{url_for('static', filename = 'app.js')}}"></script>
+    <title>My First Flask App</title>
+</head>
+<body>
+    <h1>Welcome to my Flask App</h1>
+    {% block content %}
+    {% endblock %}
+
+<nav>
+    <a href="{{ url_for('my_view.page1')}}">Page 1</a>
+    <a href="{{ url_for('my_view.page2')}}">Page 2</a>
+    <a href="{{ url_for('my_view.page3')}}">Page 3</a>
+    <a href="{{ url_for('my_view.page4')}}">Page 4</a>
+    <a href="{{ url_for('my_view.page5')}}">Page 5</a>
+    <a href="{{ url_for('my_view.admin')}}">Admin</a>
+</nav>
+</body>
+</html>
