@@ -12,12 +12,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="{{url_for('static', filename = 'app.js')}}"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
     <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
+        
     </div>
     <nav class="navbar">
         <div class="max-width">
@@ -27,22 +27,14 @@
                 <li><a href="{{ url_for('my_view.page2')}}" class="menu-btn">About</a></li>
                 <li><a href="{{ url_for('my_view.page3')}}" class="menu-btn">History</a></li>
                 <li><a href="{{ url_for('my_view.page4')}}" class="menu-btn">Trends</a></li>
-                <li><a href="{{ url_for('my_view.page5')}}" class="menu-btn">Live</a></li>
                 <li><a href="{{ url_for('my_view.admin')}}" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
-                <i class="fas fa-bars"></i>
+                <i class="fa fa-bars"></i>
             </div>
         </div>
     </nav>
 
-
-    <footer>
-    <!-- footer section start -->
-    
-    </footer>
-
-    <script src="script.js"></script>
     {% block content %}
     {% endblock %}
 </body>

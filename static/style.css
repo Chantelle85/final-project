@@ -243,21 +243,6 @@ section .title::after{
     text-align: justify;
 }
 
-/* .container {
-    display: flex;
-    flex-direction:row-reverse;
-    /* align-items: center; */
-    /* justify-content: center;
-}
-
-img {
-    max-width: 100%
-}
-
-.image {
-    flex-basis: 100%;
-}  */
-
 .about .about-content .right a{
     display: inline-block;
     background: crimson;
@@ -691,15 +676,8 @@ footer span a:hover{
     }
 }
 
- /* *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}  */
 html li,body li{
   display: grid;
-  height: 100%;
   place-items: center;
   text-align: center;
   margin: 0;
