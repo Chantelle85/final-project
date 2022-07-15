@@ -1,5 +1,90 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h3>index</h3>
+
+
+   <body>
+    <!-- <p>Welcome to my flask webapp.</p> -->
+    <div class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="h1">TikTok is popular among its users, but to those unfamiliar, it can feel confusing and hard to navigate. Here’s my guide to exploring TikTok. You can <span class="typing"></span></div>
+                
+            </div>
+        </div>
+      </div>
+    <li>
+      <div class="slider owl-carousel">
+         <div class="card">
+            <div class="img">
+               <img src="static/assets/tiktokcreate.png" alt="live on tiktok image">
+            </div>
+            <div class="content">
+               <div class="title">
+                  CREATE
+               </div>
+               <div class="sub-title">
+                  SHARE
+               </div>
+               <p>
+                  TikTok is a social app used to create and share videos. Many videos tend to be music-focused, with creators leveraging the app's vast catalogue of sound effects, music snippets, and filters to record short clips of them dancing and lip-syncing. But there's an untold number of videos to discover, with varying topics.
+               </p>
+               <div class="btn">
+                  <button>Read more</button>
+               </div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="img">
+               <img src="static/assets/tiktokfyp.png" alt="for you page image">
+            </div>
+            <div class="content">
+               <div class="title">
+                FOR YOU PAGE
+               </div>
+               <div class="sub-title">
+                FYP
+               </div>
+               <p>
+                When you open the TikTok app, it defaults to the main page. This page is split at the top into two sections: Following and For You. The 'Following' section shows the content of the people you follow. The 'For You' section shows content that is recommended to you by the platform.
+               </p>
+               <div class="btn">
+                  <button>Read more</button>
+               </div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="img">
+               <img src="static/assets/tiktoklive.png" alt="live on tiktok image">
+            </div>
+            <div class="content">
+               <div class="title">
+                LIVE ACCESS
+               </div>
+               <div class="sub-title">
+                CONNECT
+               </div>
+               <p>
+                TikTok LIVE is the place to be for real-time fun, expression, and creativity. On LIVE, you can find unexpected connections and endless possibilities to create. It's the place to be for all Creators, because it's the place to be you. Your content can bring in money with Virtual LIVE Gifts,
+               </p>
+               <div class="btn">
+                  <button>Read more</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>
+         $(".slider").owlCarousel({
+           loop: true,
+           autoplay: true,
+           autoplayTimeout: 2000, //2000ms = 2s;
+           autoplayHoverPause: true,
+         });
+      </script>
+     
+    
+    </li>
+   </body>
+</html>
+
 {% endblock %}
